@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        hrInicial= System.nanoTime();
+        hrInicial= System.currentTimeMillis();
     }
 
     override fun onStart() {
@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         //Asignamos hora actual y restamos (horaActual - horaInicial) Resultado tiempo de ejecución
 
-        val hrActual = System.nanoTime();
-        val t = hrActual - hrInicial
+        val hrActual = System.currentTimeMillis();
+        val t = hrActual - hrInicial/1000
 
         Log.d("Tiempo:", "$t")
     }
