@@ -18,19 +18,19 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         // Imprimimos en la ventana del "Logcat"
-        Log.d("Estado","onStart")
+        Log.d("Estado","Ya empezamos")
     }
 
     override fun onResume() {
         super.onResume()
         // Imprimimos en la ventana del "Logcat"
-        Log.d("Estado","onResume")
+        Log.d("Estado","Estamos en reposo")
     }
 
     override fun onPause() {
         super.onPause()
         // Imprimimos en la ventana del "Logcat"
-        Log.d("Estado","onResume")
+        Log.d("Estado","Estamos en pausa")
 
         //Asignamos hora actual y restamos (horaActual - horaInicial) Resultado tiempo de ejecución
 
